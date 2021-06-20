@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="goibibo Test Suite">
+
+    <listeners>
+        <listener class-name = "ExtentReportListener.ExtentReporterNG" />
+    </listeners>
+    <test name="Regression Test cases">
+        <classes>
+            <class name="testcases.HomePageTest"></class>
+            <class name="testcases.FlightDetailsPageTest"></class>
+            <class name="testcases.TicketDetailsPageTest"></class>
+        </classes>
+    </test>
+
+</suite>
+
