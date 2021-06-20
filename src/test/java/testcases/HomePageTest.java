@@ -1,5 +1,17 @@
 package testcases;
-
+/*
+Given Chrome browser was launched
+Then navigate to "https://www.goibibo.com/" URL
+Then user verifies "Flights" is selected and then "Round trip" is selected
+Then user clicks on From and enter "Mumbai" for Flights
+Then the autosuggestions are listed, user selects "Mumbai, India" from the dropdown for Flights
+Then user clicks on Destination and input "Kochi" for Flights
+When the autosuggestions are listed, user selects "Kochi, India" from the dropdown for Flights
+Then user clicks on the Departure and selects the departure date
+Then user clicks on Return and selects the return date
+Then user modifies the traveller details by clicking on the selector, change the value to Adults "2" and children "1" and travel class to "Business" for Flights
+When the user is able to close the popup, click on the Search button for Flights
+*/
 import base.TestBase;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

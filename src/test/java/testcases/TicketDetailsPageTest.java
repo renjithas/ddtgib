@@ -1,5 +1,8 @@
 package testcases;
-
+/*
+    When the user is navigated to the flight details page, verify the listed flight details and fare summary for Flights
+    Then user closes the browser
+ */
 import base.TestBase;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;

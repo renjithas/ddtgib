@@ -1,3 +1,10 @@
+/*
+    When the user is in the flight selection page, user selects the first flight from LHS for Flights
+    Then user sorts the list of flights in RHS by clicking on Departure for Flights
+    Then from the listed flights, user selects the flight on 2nd last row for Flights
+    Then verify the selected flights are listed in "your selection" for Flights
+    Then user clicks on the Book button for Flights
+ */
 package testcases;
 
 import base.TestBase;
@@ -35,12 +42,6 @@ public class FlightDetailsPageTest extends TestBase {
         homePage.childCount(TestUtils.TESTDATA_CHILDREN_COUNT);
         homePage.selectTravelClass(TestUtils.TESTDATA_TRAVEL_CLASS);
         homePage.search();
-    }
-
-    @DataProvider
-    public Object[][] getSetUpTestData() {
-        Object[][] data = TestUtils.getTestData(sheetName);
-        return data;
     }
 
     @Test

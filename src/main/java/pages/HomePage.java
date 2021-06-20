@@ -22,12 +22,6 @@ public class HomePage extends TestBase {
     @FindBy(id = "gosuggest_inputDest")
     WebElement txtDestination;
 
-//    @FindBy(id = "departureCalendar")
-//    WebElement txtDepartureDate;
-//
-//    @FindBy(id = "returnCalendar")
-//    WebElement txtReturnDate;
-
     @FindBy(id = "pax_link_common")
     WebElement txtPax;
 
@@ -94,26 +88,26 @@ public class HomePage extends TestBase {
     }
 
     // select travel class
-    public void selectTravelClass(String travelClass){
+    public void selectTravelClass(String travelClass) {
         Select select = new Select(dpdnTravelClass);
         select.selectByVisibleText(travelClass);
     }
 
     //select adult count
-    public void adultCount(String count){
+    public void adultCount(String count) {
         txtPax.click();
         paxBoxAdult.clear();
         paxBoxAdult.sendKeys(count);
     }
 
     //select children count
-    public void childCount(String count){
+    public void childCount(String count) {
         paxBoxChild.clear();
         paxBoxChild.sendKeys(count);
     }
 
     //click search button
-    public FlightDetailsPage search(){
+    public FlightDetailsPage search() {
         TestUtils.waitForElementAndClick(driver, btnSearch, TestUtils.WAIT_TIME);
         return new FlightDetailsPage();
     }
